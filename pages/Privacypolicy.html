@@ -1,0 +1,915 @@
+<html class="js no-touch"><head><link rel="icon" type="image/x-icon" href="../favicon.ico"><link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png"><link rel="icon" type="image/png" sizes="192x192" href="../images/favicon-192.png"><link rel="apple-touch-icon" href="../images/apple-touch-icon.png"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button[not:disabled]:hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel[not:disabled]:hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger[not:disabled]:hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#0b0c11">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="">
+    <meta name="author" content="Drive Digital">
+    <title>
+        Evergreen Paathshala    </title>
+        <!--Header-->
+    <link href="../styles/fonts.css" rel="stylesheet" type="text/css">
+<!-- Bootstrap core CSS -->
+<link href="../styles/bootstrap.css" rel="stylesheet" media="screen">
+<!-- Font Awesome -->
+  <link rel="stylesheet" href="../styles/all.css">
+<meta name="google-site-verification" content="coDamfSf10XPYZOXYfx5nwTZfbNAiQzHElEtAdh4nK4">
+<!-- <link rel="stylesheet" href="" type="text/css" media="all" /> -->
+<link rel="stylesheet" href="../styles/style_v8.css" type="text/css" media="all">
+<link rel="stylesheet" href="../styles/menu.scss" type="text/css" media="all">
+<link rel="stylesheet" href="../styles/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" href="../styles/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" href="../styles/component.css" type="text/css" media="all">
+<link href="../styles/custom_new.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="../styles/settings.css" type="text/css" media="all">
+<link rel="stylesheet" href="../styles/slick.css" type="text/css" media="all">
+<script type="text/javascript" src="../scripts/jquery.min.js"></script>
+<style>.modal-backdrop.in{display: none;}</style>
+
+    <!--Page Specific Header-->
+    <link rel="stylesheet" href="../styles/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" href="../styles/layout-fix.css" type="text/css" media="all">
+</head>
+
+<body oncontextmenu="return false;">
+    <!-- <div id="fb-root"></div>        <script>(function(d, s, id) {          var js, fjs = d.getElementsByTagName(s)[0];          if (d.getElementById(id)) return;          js = d.createElement(s); js.id = id;          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=564958046919608";          fjs.parentNode.insertBefore(js, fjs);        }(document, 'script', 'facebook-jssdk'));</script> -->
+    <!--Top Navigation-->
+    <!--<div class="noo-spinner">
+  <div class="spinner">
+    <div class="record-icon"></div>
+    <span class="record-lbl">rec</span> </div>
+</div>-->
+<div class="site">
+    <header id="mobile-nav" class="site-header">
+        <div class="nav-wrap">
+            <div class="logo"><a href="../index.html"><img src="../images/logo.png" alt="Evergreen Paathshala" class="main-logo"></a></div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul><li class=""><a href="../index.html">Home</a></li><li class=""><a href="../pages/about.html">About Us</a></li><li class=""><a href="../pages/courses.html">Online Courses</a></li><li class=""><a href="../pages/live-workshop.html">Live Workshop</a></li><li class=""><a href="../pages/demo_class.html">Demo Classes</a></li><li class=""><a href="../pages/free-tutorial-videos.html">Free Tutorials</a></li><li class=""><a href="../pages/gallery.html">Gallery</a></li><li class=""><a href="../pages/contact.html">Contact Us</a></li><li class="has-sub active"><a href="#">More <i class="fa fa-angle-down"></i></a><ul class="sub-menu"><li><a href="../pages/view_faqs.html">FAQ</a></li><li><a href="../pages/view_htus.html">How To Use</a></li><li><a href="../pages/page.html">Book</a></li><li><a href="../pages/Privacypolicy.html">Privacy Policy</a></li><li><a href="../pages/Ourtermsconditon.html">Terms &amp; Conditions</a></li><li><a href="../pages/Returnrefundcancellationpolicy.html">Refund Policy</a></li></ul></li></ul>
+            </nav>
+            <div class="head-action"><a href="../pages/studentlogin.html">Login</a><a href="../pages/studentRegister.html" class="signup">Signup</a></div>
+            <div id="navmenubar" class="menu-icon" role="button" aria-label="Open menu"><span>&#9776; Menu</span></div>
+        </div>
+        <div class="sidenav" id="mySidenav">
+            <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+            <a href="../index.html">Home</a>
+            <a href="../pages/about.html">About Us</a>
+            <a href="../pages/courses.html">Online Courses</a>
+            <a href="../pages/live-workshop.html">Live Workshop</a>
+            <a href="../pages/demo_class.html">Demo Classes</a>
+            <a href="../pages/free-tutorial-videos.html">Free Tutorials</a>
+            <a href="../pages/gallery.html">Gallery</a>
+            <a href="../pages/contact.html">Contact Us</a>
+            <a href="../pages/view_faqs.html">FAQ</a>
+            <a href="../pages/view_htus.html">How To Use</a>
+            <a href="../pages/page.html">Book</a>
+            <a href="../pages/studentlogin.html">Login</a>
+            <a href="../pages/studentRegister.html">Signup</a>
+            
+        </div>
+    </header>
+    <!--/#header-->
+        <!--Sidebar-->
+        <!--Content-->
+    <div id="main inner-page">
+            <div class="section page-title big-style">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="text-center-sm">
+                                <h1 class="title">Privacy Policy</h1>
+                                <div class="breadcrumbs">
+                                    <ul>
+                                        <li><a href="../index.html">Home</a></li>
+                                        <li>Privacy Policy</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section flex-box black-bg about-us-content">
+                <div class="container">
+                    <div class="row best-row">
+                       
+                        <div class="col-md-12 col-sm-12">
+                            <div class="text-center-xs">
+                               
+                                <h2 class="section-title fz-40">We collect</h2>
+                                <p>We collect general information from you when you register on our website, respond to a survey form.</p>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <div class="row best-row">
+                        
+                        <div class="col-md-12 col-sm-12">
+                            <div class="text-center-xs">
+                               
+                                <h2 class="section-title fz-40">We use your information for</h2>
+                                <p>To improve customer service and support. Sharing our information to you, promotion, survey or other site feature.Creating ID card, Certificate printing for you, testimonials, success data releasing and filter analysis.</p>
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="row best-row">
+                     
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">We protect your information</h2>
+                                <p>We maintain the safety of your personal information. After a transaction, your private information (credit cards, social security numbers, financials, etc.) will not be stored on our servers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Disclose any information</h2>
+                                <p>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Third party links</h2>
+                                <p>Occasionally, at our discretion, we may include or offer third party products or services on our website. These third party sites have separate and independent privacy policies. We therefore have no responsibility or liability for the content and activities of these linked sites. Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Online Privacy Policy Only</h2>
+                                <p>This online privacy policy applies only to information collected through our website and not to information collected offline.</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Changes to our Privacy Policy</h2>
+                                <p>If we decide to change our privacy policy, we will post those changes on this page.</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Contacting Us</h2>
+                                <p>If there are any questions regarding this privacy policy you may contact us using the information below. Evergreen Paathshala.in and all its components are fully owned by Evergreen Paathshala, a Private Limited firm with CIN: U92490MH2022PTC385386, PAN: AAJCD3821C.Mailing Address as per record available in Registrar of Companies office:</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                               
+                                <p>Siwan, Bihar</p>
+                                <p>(“Evergreen Paathshala” or “we”) respects your privacy and is committed to communicating transparently regarding our privacy practices. This Privacy Policy describes the types of information we may collect from you or that you may provide when you visit our website at www.Evergreen Paathshala.in or any subdomain thereof (our “Website”), as well as our practices for collecting, using, maintaining, protecting, and disclosing that information.</p>
+                                <p>This policy applies to information we collect on the Website and in email, text, and other electronic messages between you and the Website. It does not apply to information collected by us offline or through any other means, including on any other website operated by us or any third party, nor to information collected by any other third party, including through any application or content (including advertising) that may link to or be accessible from or on the Website.</p>
+                                <p>Please read this policy carefully before using the Website to understand our policies and practices regarding treating your information. By accessing or using the Website in any manner, you accept and agree to be bound by this Privacy Policy. If you do not agree with any terms of this Privacy Policy, you may not access or use the Website for any purpose.</p>
+                                <p>This Privacy Policy may change occasionally (see Updates to Our Privacy Policy below). Your continued use of the Website after we make changes is deemed to be acceptance of those changes, so please check this policy periodically for updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Children Under the Age of 16</h2>
+                                <p>Our website is not intended for children under 16 years of age. No one under the age of 16 may provide any information to or on the Website. We do not knowingly collect or solicit personal information from children under 16. If you are under 16, do not use or provide any information on the Website or through any of its features, register on or use any of the interactive or public comment features of the Website, or provide any information about yourself to us, including your name, address, telephone number, email address, or any screen name or user name you may use. If we learn we have collected or received personal information from a child under age 16 without verification of parental consent, we will delete that information. If you believe we might have any information from or about a child under 16, please contact us at .</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Information We Collect About You and How We Collect It</h2>
+                                <p>We may collect certain information about you when you access or use the Website. This may include information by which you may be personally identified, such as name, postal address, email address, or telephone number, as well as information that is about you but may not specifically identify you, such as information about your internet connection, the equipment you use to access the Website, and usage details, IP addresses, and certain other information collected through cookies and other tracking technologies (collectively “personal information”).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Information You Provide to Us</h2>
+                                <p>We collect personal information from various sources, such as directly from you
+                                when you access or use the Website. This may include:</p>
+                                <p>Information that you provide by filling in forms on our website. This includes information provided when subscribing to our services, posting comments or material to the Website, or requesting further services. We may also ask you for information when you enter a contest or promotion sponsored by us or report a problem with our website. Records and copies of your correspondence (including email addresses) if you contact us. Your responses to surveys that we might ask you to complete for research purposes. Details of transactions you carry out through the Website and your orders’ fulfilment. You may be required to provide financial or payment information to us before or after placing an order for our services, including where such orders are placed through our offline sale process.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Information You Provide to Us</h2>
+                                <p>We collect personal information from various sources, such as directly from you
+                                when you access or use the Website. This may include:</p>
+                                <p>Information that you provide by filling in forms on our website. This includes information provided when subscribing to our services, posting comments or material to the Website, or requesting further services. We may also ask you for information when you enter a contest or promotion sponsored by us or report a problem with our website. Records and copies of your correspondence (including email addresses) if you contact us. Your responses to surveys that we might ask you to complete for research purposes. Details of transactions you carry out through the Website and your orders’ fulfilment. You may be required to provide financial or payment information to us before or after placing an order for our services, including where such orders are placed through our offline sale process.</p>
+                                <p>Your search queries on the Website. You also may provide information to be published or displayed (hereinafter, “posted”) on public areas of the Website or transmitted to other users of the Website or third parties (collectively, “User Contributions”). Your User Contributions are posted on and transmitted to others at risk. Although we limit access to certain pages, please be aware that no security measures are perfect or impenetrable. Additionally, we cannot control the actions of other website users with whom you may choose to share your User Contributions. Therefore, we cannot guarantee unauthorized persons will not view your User Contributions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Information We Collect Through Automatic Data Collection Technologies</h2>
+                                <p>As you navigate through and interact with our website, we may use automatic data collection technologies to collect certain information about your equipment, browsing actions, and patterns, including:</p>
+                                <p>Details of your visits to our Website, including traffic data, location data, logs, and other communication data and the resources that you access and use on the Website; Information about the devices you use to access the Website (such as the IP address and type of device, operating system, and web browser); Dates, times, and the duration of your use of the Website (including whether you are a repeat or first-time visitor to the Website); Information about your online activities over time and across third-party websites or other online services (behavioural tracking). Information we collect automatically may be statistical data that does not include personal information. We may maintain or associate any such statistical data with personal information we collect in other ways or receive from third parties. It helps us estimate our audience size and usage patterns, speed up user experience, and improve and personalize our services, enabling us to identify and authenticate users. To the extent that we associate any of this non-personal information with your personal information, we will treat it as personal information under the terms of this Privacy Policy.</p>
+                                <p>Technologies we use for automatic data collection may include cookies. A cookie is a small file placed on your computer’s hard drive. Pages of our Website and our emails may also contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit us, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of certain Website content and verifying system and server integrity).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Third-Party Use of Cookies and Other Tracking Technologies</h2>
+                                <p>Third parties, including content and application providers may serve some content or applications on the Website. These third parties may use cookies alone or in conjunction with web beacons or other tracking technologies to collect information about you when you use our website. The information they collect may be associated with your personal information, or they may collect information, including personal information, about your online activities over time and across different websites and other online services. They may use this information to provide you with interest-based (behavioural) advertising or other targeted content.</p>
+                                <p>We do not control these third parties’ tracking technologies or how they may be used. If you have any questions about targeted content, contact the responsible provider directly.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">How We Use Your Information</h2>
+                                <p>We use information that we collect about you or that you provide to us, including any
+                                personal information:</p>
+                                <ul>
+                                    <li>To process orders, you place and complete other transactions you have requested and to maintain a record of your transactions;</li>
+                                    <li>To send you information or materials you request.</li>
+                                    <li>To provide you with the products and services you request.</li>
+                                    <li>To respond to your questions and comments and provide customer support.</li>
+                                    <li>To communicate with you about our products, services, offers, and promotions.</li>
+                                    <li>To operate, evaluate, and improve our business and the products and services we offer.</li>
+                                    <li>To analyse trends and statistics regarding products and services made available on or through the Website;</li>
+                                    <li>To protect against and prevent fraud, unauthorized transactions, claims, and other liabilities, and manage risk exposure, including by identifying potential hackers and other unauthorized users;</li>
+                                    <li>To enforce our agreements with our clients;</li>
+                                    <li>To comply with applicable legal requirements and industry standards;
+                                    </li>
+                                </ul>
+                                <p>And for any other purpose for which you provide your consent.</p>
+                                <p>We may also use your information to contact you about our own and third-party goods and services that may interest you. If you do not want us to use your information this way, please email (Insert Email).</p>
+                                <p>We may use the information you collected to enable us to display advertisements to our advertisers’ target audiences. Even though we do not disclose your personal information for these purposes without your consent, if you click on or otherwise interact with an advertisement, the advertiser may assume that you meet its target criteria.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Disclosure of Your Information</h2>
+                                <p>We may disclose aggregated information about our users and information that does not identify any individual user without restriction. We may disclose personal information that we collect or you provide (as described in this Privacy Policy):</p>
+                                <ul>
+                                    <li>To our subsidiaries and affiliates;</li>
+                                    <li>To contractors, service providers, and other third parties we use to support
+                                    our business;</li>
+                                    <li>To comply with any court order, law, or legal process, including to respond to
+                                    any government or regulatory request;</li>
+                                    <li>To enforce or apply our agreements with our clients;</li>
+                                    <li>If we believe disclosure is necessary or appropriate to protect the rights,
+                                    property, or safety of</li>
+                                </ul>
+                                <p>Evergreen Paathshala.in, users of the Website, our services, and/or others; for any other purpose incidental to the normal use of services you have requested and for any other purpose for which you consent.</p>
+                                <p>We may also disclose personal information to third parties to market their products or services if you have not opted out of these disclosures. Certain such disclosures to third parties may, subject to your opt-out rights, occur using a sale of your personal information to such third parties (i.e., in exchange for monetary or other consideration). For more information, including your rights to opt out of a sale of your personal information, see Your Choices, below.</p>
+                                <p>We also reserve the right to transfer your personal and other information to a buyer or other transferee in case of a merger, divestiture, restructuring, reorganization, dissolution, sale, or other transfer of some or all of our assets. Should such a sale, merger, or transfer occur, we will make reasonable efforts to direct the transferee to use your information in a manner consistent with our privacy policy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Third-Party Providers</h2>
+                                <p>Without limiting the preceding, we may also employ third-party companies and individuals to facilitate our Website, process data, perform website-related services, or assist us in analysing how our services are used (collectively, “Third Party Providers”). These Third Party Providers may access your personal information to perform these tasks on our behalf. They may have the right to retain and use personal information or other information through performing these tasks by the terms of the applicable Third Party Provider’s privacy policy. We advise you to review the privacy policies of the Third Party Providers but note that we have no control over and assume no responsibility for the content, privacy policies, or practices of any Third Party Providers, their sites, or services.</p>
+                                <p>Third-party providers may include, but are not limited to, the following:</p>
+                                
+                                <p>Analytics. We may use third-party providers to monitor and analyse the use of our
+                                Website.</p>
+                                <p>Google Analytics. Google Analytics is an independent web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Website. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its advertising network. You can learn about Google’s privacy practices at https://www.google.com/intl/en/policies/privacy.</p>
+                                <p>You may opt out of the aggregation and analysis of data collected about you on our Website by Google Analytics by downloading the Google Analytics opt-out browser add-on, available at https://tools.google.com/dlpage/. If you opt-out, analytics companies other than Google Analytics may continue to aggregate and analyse data collected about you on the Website.</p>
+                                <p>Hotjar. Hotjar may be used to track, capture, and analyse how users interact with our Website. You can learn about Hotjar’s privacy practices at https://www.hotjar.com/legal/policies/privacy/. For information on how you may opt out of the capture and analysis of your Website usage data by Hotjar, please visit https://www.hotjar.com/legal/policies/do-not-track/.</p>
+                                <p>Visual Website Optimizer. Visual Website Optimizer may be used to test and optimize our Website and marketing. You can learn about Visual Website Optimizer’s privacy practices at https://vwo.com/privacy-policy/. For information on how to opt out of tracking by Visual Website Optimizer, please visit https://help.vwo.com/hc/en-us/articles/360020353914-How-to-Opt-Out-of-VWO-.</p>
+                                <p>HubSpot. HubSpot may track and analyse traffic to and from our Website. You can learn about HubSpot’s privacy practices at https://legal.hubspot.com/privacy-policy. For information on how to opt out of tracking by HubSpot, please visit https://knowledge.hubspot.com/reports/customize-your-cookie-tracking-settings-and-privacy-policy-alert.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Other Service Providers</h2>
+                                <p>Google Ads. Google Ads may be used to develop and enhance our online advertising. You can learn about Google’s privacy practices at https://www.google.com/intl/en/policies/privacy.</p>
+                                <p>Facebook. We may use Facebook Ads to enhance and customize our online advertising. You can learn about Facebook’s privacy practices at https://www.facebook.com/privacy/explanation. You can also view your Facebook Ad Preferences under your Facebook settings.</p>
+                                <p>Twitter. We may use Twitter to customize and target our online advertising. You can learn about Twitter’s privacy practices at https://twitter.com/en/privacy. You can learn more about how to opt out of Twitter’s targeted advertising by visiting https://help.twitter.com/en/safety-and-security/privacy-controls-for-tailored-ads.</p>
+                                <p>LinkedIn. We may send data to LinkedIn about actions you take on the Website after interacting with a LinkedIn ad. You can learn about LinkedIn’s privacy practices at https://www.linkedin.com/legal/privacy-policy. You can also manage your preferences under your LinkedIn settings.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Security</h2>
+                                <p>Evergreen Paathshala protects your information seriously and implements reasonable measures to secure your personal information from accidental loss and unauthorized access, use, alteration, and disclosure. However, the safety and security of your information also depends on you.</p>
+                                <p>We urge you to be careful about giving out information in public areas of the Website, such as public message boards. Please use caution in determining what personal information to disclose.</p>
+                                <p>Please note that the electronic transmission of information is not completely secure. We cannot guarantee that the security measures to safeguard information will never be defeated or fail or that such measures will always be sufficient or effective. Any transmission of information is at your own risk.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Your Choices</h2>
+                                <p>We strive to provide you with choices regarding the personal information you provide
+to us. We have created mechanisms to provide you with the following control over
+your information:</p>
+                                <p>Cookies. You can set your browser to refuse all or some browser cookies or to alert
+you when cookies are being sent. If you disable or refuse cookies, please note that
+some parts of the Website may be inaccessible or not function properly.</p>
+                                <p>Disclosure of Your Information for Third-Party Advertising. Suppose you do not
+want us to share your personal information with unaffiliated or non-agent third parties
+for promotional purposes. In that case, you can opt out by emailing us with your
+request to .</p>
+<p>Please include your name, email address, phone number, physical address,
+business name, and domain in the body of your email, and include the phrase “Opt-
+Out of Information Sharing” in the subject line so that we can properly identify you
+and process your opt-out request.</p>
+<p>Promotional Offers. If you do not wish to have your email address used by us to
+promote our own or third-party products or services, you can opt-out by emailing us
+with your request to .</p>
+<p>Please include your name, email address, phone number, physical address,
+business name, and domain in the body of your email, and include the phrase “opt
+Out of Promotional Messages” in the subject line so that we can properly identify you
+and process your opt-out request.</p>
+<p>Opt-out of Sales of Your Information. You have the right to direct us not to sell your
+personal information at any time. To exercise the right to opt-out, you (or your
+authorized representative) may submit a request to us by visiting the following
+Internet Web page link: “Do Not Sell My Personal Information.”</p>
+<p>Limiting Provided Information. You can choose not to provide us with certain
+information. If you decline to provide certain information, however, please note that
+some features of the Website and certain aspects of our services may be
+inaccessible.</p>
+<p>Please note that submitting any opt-out email request to Evergreen Paathshala pursuant to this
+section will take Evergreen Paathshala a reasonable period to process and implement your
+request.</p>
+<p>We do not control third parties’ collection or use of your information to serve interest-
+based advertising. However, these third parties may provide you with ways to
+
+choose not to have your information collected or used in this way. You can opt out of
+receiving targeted ads from members of the Network Advertising Initiative (“NAI”) on
+the NAI’s Website.</p>
+<p>“Do Not Track” Requests</p>
+
+<p>We adhere to the standards in this Privacy Policy and do not monitor or respond to
+Do Not Track browser requests.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Third-party applications and Websites</h2>
+                                <p>The Website may contain links enabling the electronic transfer of data from third-party applications to the Website and links to third-party websites. Evergreen Paathshala.in is not responsible for the privacy practices or content of these applications or websites, and linking to an application or Website does not constitute an endorsement by us of that application or Website. You should review the privacy policy and terms and conditions of any such third-party application or Website before using or providing information to the same.</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Accessing and Correcting Your Information</h2>
+                                <p>You may email us at  to request access to,
+correct, or delete any personal information you provided us. We may not
+accommodate a request to change information if we believe the change would
+violate any law or legal requirement or cause the information to be incorrect. If you
+delete your User Contributions, their copies may remain viewable in cached and
+archived pages or have been copied or stored by other users.</p>
+<p>You may contact us to exercise these rights at .
+To ensure the privacy and protection of individuals, we must verify your identity (or
+that of your authorized agent) or otherwise authenticate your request(s), which we
+will do by the CCPA regulations. Please note that, under the CCPA, we are not
+required to grant a request to access/know or a request to delete with respect to
+personal information obtained from you in your role as an employee, owner, director,
+officer, or contractor of a company and within the context of Evergreen Paathshala.in providing
+its services to such company.</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Updates to Our Privacy Policy</h2>
+                                <p>Evergreen Paathshala.in reserves the right to change this Privacy Policy at any time. Suppose
+we make a material change to this Privacy Policy. In that case, we will make an effort
+to communicate these changes to you via email or by posting a notification on the
+Website. The date this Privacy Policy was last revised is at the top of this page. We
+encourage you to review this Privacy Policy periodically for updates or changes.</p>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Facebook Disclaimer</h2>
+                                <p>Complete details for Facebook’s legal terms are available at: https://www.facebook.com/legal/terms</p>
+                                <p>All Facebook policies are available at: https://www.facebook.com/policies/</p>
+                                <p>This site is not part of the Facebook website or Facebook Inc. Additionally, this site is
+                                NOT endorsed by Facebook in any way. FACEBOOK is a trademark of META, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Advertising</h2>
+                                <p>Facebook provides a platform to deliver advertising but the opinions and or views expressed from Evergreen Paathshala (“Evergreen Paathshala”) are not representative of Facebook, Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Fan Page</h2>
+                                <p>The opinions or views expressed on Evergreen Paathshala social media platforms are not representative of Facebook, Inc. While Evergreen Paathshala makes reasonable efforts to monitor and/or moderate content posted on its social media pages, we do not moderate all comments and cannot always respond in a timely manner to online requests for information.</p><p>Evergreen Paathshala reserves the sole right to review, edit and/or delete any comments it deems are inappropriate. Comments including but not limited to the following may be deleted or edited by the moderators:</p><p>Abusive or hurtful comments about a blogger or another participant; Off-topic and redundant comments (this includes promotion or solicitation of events, groups, pages, Websites, organizations, products and programs not related to or affiliated with the Evergreen Paathshala);</p><p>Comments that use foul language or "hate speech" (for example, including but not limited to racial, ethnic or gender bashing language);</p><p>Personal attacks or defamatory statements or comments (i.e., making negative personal or untrue comments about a participant), instead of just criticizing his/her posting, opinion or comments; and</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Comments that violate the privacy of any individual;</h2>
+                                <p>All links to other websites found linked from Evergreen Paathshala’s social media sites are provided as a service to readers, but such linkage does not constitute endorsement of those sites by Evergreen Paathshala, and as such we are not responsible for the content of external websites.</p><p>By submitting content to any of Evergreen Paathshala’s social media sites, you understand and acknowledge that this information is available to the public, and that Evergreen Paathshala may use this information for internal and external promotional purposes. Please note that other participants may use your posted information beyond the control of Evergreen Paathshala. If you do not wish to have the information you have made available via this site used, published, copied and/or reprinted, please do not post on this page.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row best-row">
+                        <div class="col-md-12 col-lg-12 col-sm-12">
+                            <div class="text-center-xs">
+                                <h2 class="section-title fz-40">Contact Us</h2>
+                                <p>If you have any questions about this Privacy Policy or our information practices,
+                                please email us at  or contact us at:</p>
+                                <p>Evergreen Paathshala</p>
+                                <p>Siwan, Bihar</p>
+                                <p>Contact: 9930126411</p>
+                                <p>Email: </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    <!--Footer-->
+            
+    <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="widget">
+                            <h3 class="widget-title">About IFTA</h3>
+                            <p class="mb-4">
+                                IFTA  offers a 6 months distance learning Certificate course in Digital Film making and Acting &amp; Modelling, designed and presented by producer and director Mr. Samar K Mukherjee. 
+                            </p>
+                            <div class="footer-social">
+                                 <a data-toggle="tooltip" data-placement="top" target="_BLANK" title="" data-original-title="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a data-toggle="tooltip" data-placement="top" target="_BLANK" title="" data-original-title="Twitter" href="#"><i class="fab fa-twitter"></i></a>
+                                <!-- <a data-toggle="tooltip" data-placement="top" target="_BLANK" title="" data-original-title="Pinterest" href="#"><i class="fab fa-pinterest"></i></a> -->
+                                <a data-toggle="tooltip" data-placement="top" target="_BLANK" title="" data-original-title="Instagram" href="#"><i class="fab fa-instagram"></i></a>
+                                 <a data-toggle="tooltip" data-placement="top" target="_BLANK" title="" data-original-title="youtube" href="https://www.youtube.com/@evergreenpaathshala"><i class="fab fa-youtube"></i></a>
+                                  <a data-toggle="tooltip" data-placement="top" target="_BLANK" title="" data-original-title="whatsapp" href="https://api.whatsapp.com/send?phone=917209980722"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="widget">
+                            <h3 class="widget-title">Our Online Course</h3>
+                            <ul>
+                                                                <li><a href="./courses.html">Digital Film Making ( DFM ) Course</a></li>
+                                                                <li><a href="../pages/3.html">Director Of Photography ( DOP ) Course</a></li>
+                                                                <li><a href="./courses.html">Creative Film Direction ( CFD ) Course</a></li>
+                                                                <li><a href="../pages/4.html">Video and Movie Editing ( VME ) Course</a></li>
+                                                                <li><a href="./courses.html">Advanced Wedding Film making (AWF) Course</a></li>
+                                                                <li><a href="../pages/6.html">Movie Screen Writing ( MSW ) Course</a></li>
+                                                                <li><a href="../pages/14.html">Publicity Marketing and Realising ( PMR ) </a></li>
+                                                                <li><a href="../pages/7.html">Acting &amp; Modelling Craft ( AMC )</a></li>
+                                                                <li><a href="../pages/23.html">AI-Powered Screenwriting Mastery Course</a></li>
+                                                                <li><a href="../pages/24.html">Book - TBSA</a></li>
+                                                                <li><a href="../pages/25.html">Film Business &amp; Distribution Mastery (FBDM)</a></li>
+                                                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="widget">
+                            <h3 class="widget-title">Quick Links</h3>
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../pages/about.html">About</a></li>
+                                <li><a href="./courses.html">Course</a></li>
+                                <li><a href="../pages/contact.html">Contact Us</a></li>
+                                <li><a href="../pages/Privacypolicy.html">Privacy Policy</a></li>
+                                <li><a href="../pages/Ourtermsconditon.html">Our Terms &amp; Conditions</a></li>
+                                <li><a href="../pages/Returnrefundcancellationpolicy.html">Return, Refund &amp; Cancellation Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="widget">
+                            <h3 class="widget-title">Connect With Us</h3>
+                            <div class="textwidget">
+                                                                  <p>Siwan, Bihar</p>
+                                <p>P: <a href="tel:+917209980722">(+91) 7209980722</a>, <a href="tel:+917209980722">7209980722</a></p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+     <div id="myModal" class="courserpopup modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">                    
+                <div class="modal-body" id="youtube"></div>
+                <div class="vdo_ctrl">
+                    <a id="play" class="play_video"><i class="fa fa-play"></i></a>
+                     <a id="pause" class="play_video"><i class="fa fa-pause"></i></a>
+                    <a id="mute-toggle" class="play_video"><i class="fa fa-volume-up"></i></a>  
+                     <a data-dismiss="modal" class="play_video" aria-hidden="true">X</a>                  
+                    <input type="range" id="progress-bar" value="0"> 
+                                
+                </div>
+                               
+            </div>
+        </div>
+    </div>
+    <div id="multipleid" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Alert!</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Multiple login Attempets</p>
+                    <p class="text-warning"><small>Your id have been logged in some other system.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="paymentDue" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Alert!</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-warning">Payment Status</p>
+                    <p class="text-warning">Please Pay Your Remaining Course Amount.</p>
+                    <p class="text-warning">भुगतान की स्थिति</p>
+                    <p class="text-warning">कृपया अपनी शेष राशि राशि का भुगतान करें</p>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <div id="buyCourse" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Alert!</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-warning">Status</p>
+                    <p class="text-warning">Please contact admin..</p>
+                    <p class="text-warning">स्थिति</p>
+                    <p class="text-warning">कृपया व्यवस्थापक से संपर्क करें।</p>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+      <div id="login" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Alert!</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-warning">Please login to see video.</p>
+                    <p class="text-warning">वीडियो देखने के लिए कृपया लॉगिन करें।</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="md-overlay"></div>
+
+    <div class="demo-class-fixed"><a href="../pages/demo_class.html">Demo Class</a></div>
+  
+    <!-- the overlay element -->
+   <a id="backtotopnew" href="../index.html"><i class="fa fa-home"></i></a>
+
+    
+    <script type="text/javascript" src="../scripts/jquery-migrate.min.js" defer></script>
+   
+    <!-- <script type="text/javascript" src="" defer></script> -->
+    <script type="text/javascript" src="../scripts/jquery.countTo.js" defer></script>
+    <script type="text/javascript" src="../scripts/jquery.themepunch.tools.min.js" defer></script>
+    <script type="text/javascript" src="../scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../scripts/modernizr-2.7.1.min.js" defer></script>
+    <script type="text/javascript" src="../scripts/owl.carousel.min.js" defer></script>
+    <script type="text/javascript" src="../scripts/classie.js" defer></script>
+    <script type="text/javascript" src="../scripts/modalEffects.js" defer></script>
+    <script type="text/javascript" src="../scripts/slick.min.js" defer></script>
+    <script type="text/javascript" src="../scripts/waypoints.min.js" defer></script>
+    <script type="text/javascript" src="../scripts/script.js" defer></script>
+    <script type="text/javascript" src="../scripts/custom.js" defer></script>
+    <script type="text/javascript" src="../scripts/sweetalert.min.js" defer></script>
+  
+
+    <script type="text/javascript">   
+    
+     $(".order").click(function(){     
+       swal("Alert!", "Sorry You can not access this semester because you have not passed previous semester! क्षमा करें आप इस सेमेस्टर तक नहीं पहुंच सकते क्योंकि आपने पिछले सेमेस्टर को पास नहीं किया है!")
+      });
+  
+        $('a[href*="#"]').on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top
+            }, 500, 'linear');
+        });
+        $(document).ready(function(){
+            var englishDiv = $("#english-area");
+            var hindiDiv = $("#hindi-area");
+                hindiDiv.fadeOut();
+            $(".english").click(function(){
+                $(".hindi").removeClass("activeLn");
+                $(".english").addClass("activeLn");
+                hindiDiv.fadeOut();
+                englishDiv.fadeIn();
+            });
+            $(".hindi").click(function(){
+                $(".english").removeClass("activeLn");
+                $(".hindi").addClass("activeLn");
+                hindiDiv.fadeIn();
+                englishDiv.fadeOut();
+            });
+        });
+        $(document).ready(function(){
+        function toggleIcon(e) {
+            $(e.target)
+                .prev('.panel-heading')
+                .find(".more-less")
+                .toggleClass('glyphicon-plus glyphicon-minus');
+        }
+        $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+        $('.panel-group').on('shown.bs.collapse', toggleIcon);});
+        $(function() {
+})
+$(document).on("click", ".img-c.active", function() {
+  let copy = $(this)
+  copy.removeClass("positioned active").addClass("postactive")
+  setTimeout(function() {
+    copy.remove();
+  }, 500)
+})
+
+
+function loadlink(){ 
+    
+    $.ajax({ 
+         url: "./index.htmlindex.php/login_control/sessioncheck",
+        success: function(data){
+            if(data=='match'){
+
+            }else{
+                $('#multipleid').modal('show');
+                 location.reload(true).delay(20000);
+
+            }        
+        }});
+}
+
+
+/*function openNav() {
+    document.getElementById("mySidenav").style.width = "350px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}*/
+
+function myFunction(e) {
+    $('.vdo_ctrl').show();
+    document.getElementById('demo').style.cursor = "pointer";
+    var x = e.clientX;
+    var y = e.clientY;
+    
+    setTimeout(function(){ 
+    var newx = x;
+    var newy = y;
+    if(x == newx && y == newy){
+        $('.vdo_ctrl').fadeOut().delay(10000);
+        document.getElementById('demo').style.cursor = "none";
+    }
+     }, 10000);
+}
+$(document).ready(function(){
+    $("#navmenubar").click(function(){
+        $("#mySidenav").css("width","350px");
+    });
+    $("#closebtn").click(function(){
+         $("#mySidenav").css("width","0px");
+    });
+});
+</script>
+
+<script type="text/javascript">
+    (function($){
+    $.fn.extend({ 
+        rotaterator: function(options) {
+ 
+            var defaults = {
+                fadeSpeed: 500,
+                pauseSpeed: 100,
+                child:null
+            };
+             
+            var options = $.extend(defaults, options);
+         
+            return this.each(function() {
+                  var o =options;
+                  var obj = $(this);                
+                  var items = $(obj.children(), obj);
+                  items.each(function() {$(this).hide();})
+                  if(!o.child){var next = $(obj).children(':first');
+                  }else{var next = o.child;
+                  }
+                  $(next).fadeIn(o.fadeSpeed, function() {
+                        $(next).delay(o.pauseSpeed).fadeOut(o.fadeSpeed, function() {
+                            var next = $(this).next();
+                            if (next.length == 0){
+                                    next = $(obj).children(':first');
+                            }
+                            $(obj).rotaterator({child : next, fadeSpeed : o.fadeSpeed, pauseSpeed : o.pauseSpeed});
+                        })
+                    });
+            });
+        }
+    });
+})(jQuery); 
+
+ $(document).ready(function() {
+        $('#rotate').rotaterator({fadeSpeed:2000, pauseSpeed:700});
+ 
+        $(".full-screen").click(function(){
+            var newclass = "."+this.id;
+          $(newclass).css({"position": "fixed", "z-index": "99"});
+          $(".full-screen").css({"display": "none"});
+          $(".menu-icon").css({"display": "none"});
+          $(".demo-class-fixed").css({"display": "none"});
+          $(".hide-full-screen").css({"display": "inline-flex"});
+          $( 'div[ data-for=' + this.id + ']' ).addClass( 'openfull' );
+   
+        });
+
+        $(".hide-full-screen").click(function(){
+          var newid = "."+$(this).attr("title");
+          $(newid).css({"position": "absolute", "z-index": "auto"});
+          $(".menu-icon").css({"display": "block"});
+          $(".demo-class-fixed").css({"display": "block"});
+          $(".full-screen").css({"display": "inline-flex"});
+          $(".hide-full-screen").css({"display": "none"});
+           $( 'div[ data-for=' + $(this).attr("title") + ']' ).removeClass( 'openfull' );
+
+        });
+
+
+ });
+</script>
+<script type="text/javascript">
+let modalId = $('#image-gallery');
+
+$(document)
+  .ready(function () {
+
+    loadGallery(true, 'a.thumbnail');
+
+    //This function disables buttons when needed
+    function disableButtons(counter_max, counter_current) {
+      $('#show-previous-image, #show-next-image')
+        .show();
+      if (counter_max === counter_current) {
+        $('#show-next-image')
+          .hide();
+      } else if (counter_current === 1) {
+        $('#show-previous-image')
+          .hide();
+      }
+    }
+
+    /**
+     *
+     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+     * @param setClickAttr  Sets the attribute for the click handler.
+     */
+
+    function loadGallery(setIDs, setClickAttr) {
+      let current_image,
+        selector,
+        counter = 0;
+
+      $('#show-next-image, #show-previous-image')
+        .click(function () {
+          if ($(this)
+            .attr('id') === 'show-previous-image') {
+            current_image--;
+          } else {
+            current_image++;
+          }
+
+          selector = $('[data-image-id="' + current_image + '"]');
+          updateGallery(selector);
+        });
+
+      function updateGallery(selector) {
+        let $sel = selector;
+        current_image = $sel.data('image-id');
+        $('#image-gallery-title')
+          .text($sel.data('title'));
+        $('#image-gallery-image')
+          .attr('src', $sel.data('image'));
+        disableButtons(counter, $sel.data('image-id'));
+      }
+
+      if (setIDs == true) {
+        $('[data-image-id]')
+          .each(function () {
+            counter++;
+            $(this)
+              .attr('data-image-id', counter);
+          });
+      }
+      $(setClickAttr)
+        .on('click', function () {
+          updateGallery($(this));
+        });
+    }
+  });
+
+// build key actions
+$(document)
+  .keydown(function (e) {
+    switch (e.which) {
+      case 37: // left
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+          $('#show-previous-image')
+            .click();
+        }
+        break;
+
+      case 39: // right
+        if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+          $('#show-next-image')
+            .click();
+        }
+        break;
+
+      default:
+        return; // exit this handler for other keys
+    }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+  });
+  function myFunctionlogin() {
+    var x = document.getElementById("user_pass");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+function GetIFrameUrl(dataid)
+{    
+    var iframes= document.getElementsByTagName('iframe')[dataid-1].id;
+    var frame_src = document.getElementById(iframes).src;
+    //alert(frame_src);
+    $("#youtube").html('<iframe width="200" height="100" src="'+frame_src+'" frameborder="0" allowfullscreen=""></iframe>');
+}
+
+</script>    <!--Page Specific Footer-->
+    
+
+</div><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span><script src="../scripts/responsive.js" defer></script>
+<script src="../scripts/nav.js"></script>
+</body></html>

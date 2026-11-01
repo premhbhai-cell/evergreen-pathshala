@@ -1,0 +1,108 @@
+/* ==========================================================
+   Camera viewfinder HUD (home hero)
+   Frame corners, REC, focus rulers, 4K spec, battery.
+   Everything is CSS / inline SVG - no image files needed.
+   ========================================================== */
+.banner-section{
+  --pad:20px;
+  --lens:clamp(210px,38vmin,380px);
+  --f:clamp(22px,3vw,52px);
+  --tick:#fff;
+  min-height:100vh;min-height:100svh!important;
+}
+.banner-section .lens{
+  width:var(--lens);height:var(--lens);
+  max-width:70vw;max-height:70vw;
+  object-fit:contain;pointer-events:none;
+}
+#film-slider.hud{min-height:100vh;min-height:100svh;overflow:hidden}
+
+/* ---- frame corners ---- */
+.hud-corner{
+  position:absolute;width:clamp(44px,5.4vw,104px);height:clamp(54px,11vh,122px);
+  border:0 solid #fff;pointer-events:none;z-index:3;
+}
+.hud-corner.tl{top:var(--pad);left:var(--pad);border-top-width:3px;border-left-width:3px}
+.hud-corner.tr{top:var(--pad);right:var(--pad);border-top-width:3px;border-right-width:3px}
+.hud-corner.bl{bottom:var(--pad);left:var(--pad);border-bottom-width:3px;border-left-width:3px}
+.hud-corner.br{bottom:var(--pad);right:var(--pad);border-bottom-width:3px;border-right-width:3px}
+
+/* ---- REC ---- */
+.hud .recoder{top:calc(var(--pad) + 22px);left:calc(var(--pad) + 16px);z-index:4}
+.hud .record-icon{width:clamp(18px,2vw,36px);height:clamp(18px,2vw,36px);
+  background:#ff1a1a;box-shadow:0 0 14px rgba(255,26,26,.65);animation:hudBlink 1s ease-in-out infinite}
+.hud .record-lbl{font-size:clamp(17px,1.9vw,30px);margin-left:10px;letter-spacing:.02em}
+@keyframes hudBlink{0%,100%{opacity:1}50%{opacity:.18}}
+
+/* ---- focus rulers ---- */
+.ruler{position:absolute;pointer-events:none;z-index:2}
+.ruler i{position:absolute;inset:0;display:block}
+.ruler i:before,.ruler i:after{content:"";position:absolute}
+/* vertical (ticks stacked, centred on lens) */
+.ruler-v{left:50%;width:30px;margin-left:-15px;height:clamp(54px,19vh,172px)}
+.ruler-v.ruler-top{bottom:calc(50% + var(--lens)/2 + 14px)}
+.ruler-v.ruler-bottom{top:calc(50% + var(--lens)/2 + 14px)}
+.ruler-v i:before{left:50%;width:14px;margin-left:-7px;top:0;bottom:0;
+  background:repeating-linear-gradient(to bottom,var(--tick) 0 1.5px,transparent 1.5px 6px)}
+.ruler-v i:after{left:50%;width:28px;margin-left:-14px;top:0;bottom:0;
+  background:repeating-linear-gradient(to bottom,var(--tick) 0 2px,transparent 2px 24px)}
+/* horizontal (ticks side by side) */
+.ruler-h{top:50%;height:30px;margin-top:-15px;width:clamp(90px,17vw,330px)}
+.ruler-h.ruler-left{right:calc(50% + var(--f)*9 + 26px)}
+.ruler-h.ruler-right{left:calc(50% + var(--f)*9 + 26px)}
+.ruler-h i:before{top:50%;height:14px;margin-top:-7px;left:0;right:0;
+  background:repeating-linear-gradient(to right,var(--tick) 0 1.5px,transparent 1.5px 6px)}
+.ruler-h i:after{top:50%;height:28px;margin-top:-14px;left:0;right:0;
+  background:repeating-linear-gradient(to right,var(--tick) 0 2px,transparent 2px 24px)}
+
+/* ---- camera spec (bottom-left) ---- */
+.hud-spec{position:absolute;left:calc(var(--pad) + 18px);bottom:calc(var(--pad) + 22px);z-index:4;
+  color:#fff;font-size:clamp(13px,1.35vw,22px);line-height:1.35;text-align:left}
+.hud-spec b{font-weight:700;font-size:1.08em}
+.hud-spec .sep{display:inline-block;margin:0 .55em;opacity:.85;font-weight:300}
+.hud-spec span:not(.sep){font-weight:300}
+
+/* ---- battery (bottom-right) ---- */
+.hud-battery{position:absolute;right:calc(var(--pad) + 18px);bottom:calc(var(--pad) + 18px);z-index:4;
+  color:#fff;text-align:right;font-size:clamp(14px,1.5vw,24px);line-height:1.1}
+.hud-battery svg{display:block;margin:0 0 4px auto;width:clamp(38px,3.4vw,58px);height:auto;overflow:visible}
+.hud-battery .bat-fill{transition:width 1s linear,fill .4s}
+.hud-battery.low .bat-fill{fill:#ff3b30;animation:hudBlink 1s infinite}
+.hud-battery span{font-weight:300;letter-spacing:.02em}
+
+/* ---- rotating title ---- */
+#film-slider .cam-heading{display:none;font-size:var(--f);letter-spacing:.22em;text-align:center;
+  line-height:1.15;margin:0;width:max-content;max-width:86vw;z-index:2;padding-left:.22em}
+#film-slider .cam-heading.is-active{display:block}
+#film-slider .cam-heading:before{width:calc(var(--lens)*.54);height:calc(var(--lens)*.54)}
+@media (prefers-reduced-motion:reduce){
+  .hud .record-icon,.banner-section .lens,#film-slider .cam-heading{animation:none!important}
+  #film-slider .cam-heading{color:#fff}
+}
+
+/* ---- scroll hint ---- */
+.banner-section .backtotop{z-index:5}
+
+/* ---------- tablet ---------- */
+@media (max-width:991px){
+  .banner-section{--pad:14px}
+}
+/* ---------- phones ---------- */
+@media (max-width:640px){
+  .banner-section{--pad:10px;--lens:clamp(190px,64vw,300px);--f:clamp(19px,6vw,30px)}
+  .ruler-h{display:none}
+  .ruler-v{height:clamp(40px,10vh,80px)}
+  .hud-corner{width:34px;height:44px;border-width:0}
+  .hud-corner.tl{border-top-width:2px;border-left-width:2px}
+  .hud-corner.tr{border-top-width:2px;border-right-width:2px}
+  .hud-corner.bl{border-bottom-width:2px;border-left-width:2px}
+  .hud-corner.br{border-bottom-width:2px;border-right-width:2px}
+  .hud .recoder{top:calc(var(--pad) + 14px);left:calc(var(--pad) + 12px)}
+  .hud-spec{left:calc(var(--pad) + 12px);bottom:calc(var(--pad) + 40px);font-size:12px}
+  .hud-battery{right:calc(var(--pad) + 12px);bottom:calc(var(--pad) + 40px);font-size:12px}
+  #film-slider .cam-heading{letter-spacing:.14em;padding-left:.14em}
+}
+@media (max-height:480px) and (orientation:landscape){
+  .banner-section{--lens:clamp(150px,52vh,260px);--f:clamp(18px,3.4vw,30px)}
+  .ruler-v{display:none}
+}
